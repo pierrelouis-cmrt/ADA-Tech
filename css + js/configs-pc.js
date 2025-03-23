@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     radio.addEventListener("change", filterPosts);
   });
 
-  fetch("json/configs-pc.json")
+  fetch("../json/configs-pc.json")
     .then((response) => response.json())
     .then((jsonData) => {
       jsonData.forEach((config) => {
